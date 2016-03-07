@@ -10,10 +10,13 @@ var session = require('express-session');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
-var exercisetype = require('./routes/exercisetype');
-var rankfriends = require('./routes/rankfriends');
+
+var ranking = require('./routes/ranking');
 var records = require('./routes/records');
 var projects = require('./routes/projects');
+var auth = require('./routes/auth');
+var curriculum = require('./routes/curriculum');
+var badges = require('./routes/badges');
 
 var app = express();
 app.set('env', 'production');
@@ -22,7 +25,6 @@ app.set('env', 'production');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -50,10 +52,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ------ Mapping mount points with router-Level middleware modules ------ //
 app.use('/', index);
 app.use('/users', users);
-app.use('/exercisetype',exercisetype);
-app.use('/rankfriends',rankfriends);
+app.use('/ranking',ranking);
 app.use('/records',records);
 app.use('/projects', projects);
+app.use('/auth', auth);
+app.use('/curriculum', curriculum);
+app.use('/badges', badges);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

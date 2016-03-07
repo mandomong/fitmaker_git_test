@@ -5,7 +5,7 @@ var express = require('express');
 var router = express.Router();
 
 
-// --- 4. 운동기록 --- //
+// --- 8. 운동기록 --- //
 
 router.post('/', function (req, res, next) {
 

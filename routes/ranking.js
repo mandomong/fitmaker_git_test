@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-// --- 5. 랭킹 보기 --- //
+// --- 10. 랭킹 보기 --- //
 router.get('/', function (req, res, next) {
     res.json(
         {
