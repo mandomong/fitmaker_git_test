@@ -1,14 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
-// --- 2. 로그인 --- //
+// --- 1. 로그인 --- //
 router.post('/login',function(req, res, next) {
 
   if(req.secure) {
     res.json({
-      "result": {
-        "message": "로그인이 정상적으로 처리되었습니다..."
-      }
+
+      "id": 9,
+      "message": "로그인이 정상적으로 처리되었습니다..."
+
     });
   }else{
     var err = new Error('SSL/TLS Upgrade Required');
@@ -35,7 +36,7 @@ router.post('/facebook/token',function(req, res, next) {
 
 });
 
-// --- 4. 로그아웃 --- //
+// --- 2. 로그아웃 --- //
 router.post('/logout',function(req, res, next) {
 
 

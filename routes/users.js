@@ -1,13 +1,52 @@
 var express = require('express');
 var router = express.Router();
 
-// --- 1. 회원 가입 --- //
+// --- 5. 회원 가입 --- //
 router.post('/',function(req, res, next) {
     if(req.secure) {
         res.json({
             "result": {
                 "message": "회원가입이 정상적으로 처리되었습니다..."
             }
+        });
+    }else{
+        var err = new Error('SSL/TLS Upgrade Required');
+        err.status = 426;
+        next(err);
+    }
+
+});
+
+// --- 4. 회원검색 --- //
+router.get('/',function(req, res, next) {
+    if(req.secure) {
+        res.json({
+            "result" : {
+            "message": "회원 검색에 성공하였습니다...",
+              "users": [
+                {
+                    "user_id": 20,
+                    "user_name": "쭈니",
+                    "user_email": "zooni@han.net",
+                    "user_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_um.jpg",
+                    "user_state": 2
+                },
+                {
+                    "user_id": 22,
+                    "user_name": "뜨미",
+                    "user_email": "doomi@han.net",
+                    "user_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_first.jpg",
+                    "user_state": 1
+                },
+                {
+                    "user_id": 23,
+                    "user_name": "서니",
+                    "user_email": "sunny@han.net",
+                    "user_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_sun.jpg",
+                    "user_state": 0
+                }
+            ]
+        }
         });
     }else{
         var err = new Error('SSL/TLS Upgrade Required');
@@ -26,23 +65,43 @@ router.get('/facebook',function(req, res, nex){
     });
 });
 
-// --- 11. 마이페이지 --- //
+// --- 6. 마이페이지 --- //
 router.get('/me', function (req, res, next) {
     if (req.secure) {
         res.json({
-            "result": {
-                "message": "마이페이지가 정상적으로 조회되었습니다...",
-                "user_name": "천우희",
-                "user_photourl": "/images/profile/woohee.jpg",
-                "badge_Cnt": 3,
-                "hours": 300,
-                "exctype_name": "발레리나 타입",
-                "project_history": [{"project_id": 1, "name": "비키니 프로젝트!", "ing": true},
-                    {"project_id": 2, "name": "힙업 삼주완성!", "ing": false},
-                    {"project_id": 3, "name": "해범이 만들기!", "ing": true}],
-                "badges": [{"badge_name": "출석왕", "badge_photourl": "/images/badge/first.jpg", "own_badge": true},
-                    {"badge_name": "에스라인마스터", "badge_photourl": "/images/badge/second.jpg", "own_badge": true}]
-            }
+            "result" : {
+            "message": "마이페이지가 정상적으로 조회되었습니다...",
+              "user": {
+                "user_name" : "kimstar",
+                  "user_photourl" :  "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_um.jpg",
+                  "hours": 1510,
+                  "exctype_name": "머슬퀸"
+            },
+            "project_history": [
+                {
+                    "project_id": 25,
+                    "project_name": "기초체력기르기",
+                    "project_on": true
+                },
+                {
+                    "project_id": 26,
+                    "project_name": "전신근력운동커리큘럼",
+                    "project_on": true
+                },
+                {
+                    "project_id": 27,
+                    "project_name": "식스팩 프로젝트 커리큘럼",
+                    "project_on": true
+                }
+            ],
+              "mybadges": [
+                {
+                    "badge_id": 3,
+                    "badge_name": "30회달성",
+                    "badge_photourl": null
+                }
+            ]
+        }
         });
     } else {
         var err = new Error('SSL/TLS Upgrade Required');
@@ -51,7 +110,7 @@ router.get('/me', function (req, res, next) {
     }
 });
 
-// --- 12. 프로필사진변경 --- //
+// --- 7. 프로필사진변경 --- //
 router.put('/me', function (req, res, next) {
     if (req.secure) {
         res.json({
@@ -66,33 +125,7 @@ router.put('/me', function (req, res, next) {
     }
 });
 
-// --- 10. 친구 프로필 보기 --- //
-router.get('/1234',function(req,res,next){
-    if(req.secure){
-        res.json({
-            "result" : {
-                "message":"친구프로필 페이지가 정상적으로 조회되었습니다...",
-                "friend": {
-                    "friend_name": "장한솔",
-                    "friend_photourl": "/images/profile/jang.jpg",
-                    "badgeCnt": 5,
-                    "hours": 250,
-                    "exctype_name": "헬스 타입",
-                },
-                "project_history":[{"project_id":1, "name":"비키니 프로젝트!","ing":true},
-                                   {"project_id":2, "name":"힙업 삼주완성!","ing":false},
-                                   {"project_id":3, "name":"해범이 만들기!","ing":true}],
-                "badges":[{"badge_name":"출석왕", "badge_photourl":"/images/badge/first.jpg"},
-                          {"badge_name":"에스라인마스터", "badge_photourl":"/images/badge/sline.jpg"}]
-            }
-        });
-    }else{
-        var err = new Error('SSL/TLS Upgrade Required');
-        err.status = 426;
-        next(err);
-    }
 
-});
 
 router.get('/photos', function(req,res,next){
     var form = new formidable.IncomingForm();

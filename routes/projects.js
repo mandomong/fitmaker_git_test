@@ -1,35 +1,53 @@
 var express = require('express');
 var router = express.Router();
 
-// --- 6. 프로젝트 생성 --- //
+// --- 14. 프로젝트 생성 --- //
 router.post('/', function (req, res, next) {
 
     res.json({
         "result": {
             "message": "프로젝트를 생성 하는데 성공하였습니다.",
-            "project_id": 3
+            "project_id": 29
         }
 
     });
 });
 
 
-// --- 7. 프로젝트 가져오기 (참여중인 프로젝트 포함) --- //
-router.get('/13', function (req, res, next) {
+// --- 15. 프로젝트 가져오기 (참여중인 프로젝트 포함) --- //
+router.get('/:project_id', function (req, res, next) {
+
+    var project_id = req.params.project_id;
 
     res.json({
         "result": {
             "message": "프로젝트 페이지 요청에 성공하였습니다",
             "projects_ing": [
                 {
-                    "project_id": 13,
-                    "project_name": "타바타 운동법"
+                    "project_id": 25,
+                    "project_name": "기초체력기르기"
                 },
                 {
-                    "project_id": 18,
-                    "project_name": "다이어트 커리큘럼-한달2KG"
+                    "project_id": 26,
+                    "project_name": "전신근력운동커리큘럼"
+                },
+                {
+                    "project_id": 27,
+                    "project_name": "식스팩 프로젝트 커리큘럼"
+                },
+                {
+                    "project_id": 28,
+                    "project_name": "기초체력기르기"
+                },
+                {
+                    "project_id": 29,
+                    "project_name": "기초체력기르기"
                 }
             ],
+            "today": {
+                "position": null,
+                "check": false
+            },
             "courses": [
                 {
                     "course_seq": 1,
@@ -3395,7 +3413,6 @@ router.get('/13', function (req, res, next) {
                 }
             ]
         }
-
     });
 });
 

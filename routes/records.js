@@ -5,19 +5,16 @@ var express = require('express');
 var router = express.Router();
 
 
-// --- 8. 운동기록 --- //
+// --- 16. 운동기록 --- //
 
 router.post('/', function (req, res, next) {
 
-    res.json(
-        {
-            "result": {
-                "message": "운동기록에 성공하였습니다",
-                "badge_id" : 1
-            }
-
-
-        });
+    res.json({
+        "result": {
+          "message": "운동기록에 성공하였습니다",
+          "badge_id": null
+        }
+      });
 });
 
 module.exports = router;
