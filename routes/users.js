@@ -23,7 +23,7 @@ router.get('/',function(req, res, next) {
         res.json({
             "result" : {
             "message": "회원 검색에 성공하였습니다...",
-              "frineds": [
+              "friends": [
                 {
                     "friend_id": 20,
                     "friend_name": "쭈니",
