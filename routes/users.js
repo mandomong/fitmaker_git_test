@@ -23,27 +23,27 @@ router.get('/',function(req, res, next) {
         res.json({
             "result" : {
             "message": "회원 검색에 성공하였습니다...",
-              "users": [
+              "frineds": [
                 {
-                    "user_id": 20,
-                    "user_name": "쭈니",
-                    "user_email": "zooni@han.net",
-                    "user_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_um.jpg",
-                    "user_state": 2
+                    "friend_id": 20,
+                    "friend_name": "쭈니",
+                    "friend_email": "zooni@han.net",
+                    "friend_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_um.jpg",
+                    "friend_state": 2
                 },
                 {
-                    "user_id": 22,
-                    "user_name": "뜨미",
-                    "user_email": "doomi@han.net",
-                    "user_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_first.jpg",
-                    "user_state": 1
+                    "friend_id": 22,
+                    "friend_name": "뜨미",
+                    "friend_email": "doomi@han.net",
+                    "friend_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_first.jpg",
+                    "friend_state": 1
                 },
                 {
-                    "user_id": 23,
-                    "user_name": "서니",
-                    "user_email": "sunny@han.net",
-                    "user_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_sun.jpg",
-                    "user_state": 0
+                    "friend_id": 23,
+                    "friend_name": "서니",
+                    "friend_email": "sunny@han.net",
+                    "friend_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_sun.jpg",
+                    "friend_state": 0
                 }
             ]
         }
