@@ -349,61 +349,388 @@ router.get('/', function (req, res, next) {
                         "exctype_id": 5,
                         "exctype_name": "운동선수",
                         "exctype_info": "운동선수타입 입니다.",
-                        "exctype_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_moon.jpg"
+                        "exctype_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/exctype_girlfriend.jpg"
                       },
                       "curriculum": [
                         {
                           "curri_id": 1,
                           "curri_name": "기초체력기르기",
-                          "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_moon.jpg",
+                          "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_lovelyz.jpg",
                           "curri_type": "초급",
-                          "curri_info": "기초체력을 길러주는 전신운동 루틴입니다. / 유산소운동 + 전신근력운동"
+                          "curri_info": "기초체력을 길러주는 전신운동 루틴입니다. / 유산소운동 + 전신근력운동",
+                          "contents": [
+                            {
+                              "contents_id": 9,
+                              "contents_name": "니 푸쉬업",
+                              "contents_target": "어깨+가슴",
+                              "contents_url": "https://youtu.be/SKCcvxBSQiA?list=PLWK0zibPydjUGl8xGBixK5oyZNH9ocKKF"
+                            },
+                            {
+                              "contents_id": 43,
+                              "contents_name": "버피",
+                              "contents_target": "유산소+전신",
+                              "contents_url": "https://youtu.be/zHMPpb8_H-E"
+                            },
+                            {
+                              "contents_id": 60,
+                              "contents_name": "스쿼트",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/63bRzSBNhaI"
+                            },
+                            {
+                              "contents_id": 95,
+                              "contents_name": "플랭크",
+                              "contents_target": "어깨+복부+허벅지",
+                              "contents_url": "https://youtu.be/X0OZKVzVVMw"
+                            }
+                          ]
                         },
                         {
                           "curri_id": 2,
                           "curri_name": "기초체력기르기",
                           "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_moon.jpg",
                           "curri_type": "중급",
-                          "curri_info": "기초체력을 길러주는 전신운동 루틴입니다. / 유산소운동 + 전신근력운동"
+                          "curri_info": "기초체력을 길러주는 전신운동 루틴입니다. / 유산소운동 + 전신근력운동",
+                          "contents": [
+                            {
+                              "contents_id": 27,
+                              "contents_name": "런지 (우)",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+                            },
+                            {
+                              "contents_id": 28,
+                              "contents_name": "런지 (좌)",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+                            },
+                            {
+                              "contents_id": 30,
+                              "contents_name": "레그레이즈",
+                              "contents_target": "복부",
+                              "contents_url": "https://youtu.be/yxV2YHPCmVI"
+                            },
+                            {
+                              "contents_id": 33,
+                              "contents_name": "로우 - 덤벨",
+                              "contents_target": "등",
+                              "contents_url": "https://youtu.be/CiCSy2LKLjc"
+                            },
+                            {
+                              "contents_id": 38,
+                              "contents_name": "맨손 데드리프트",
+                              "contents_target": "허리+엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/SWcFijyoKBc"
+                            },
+                            {
+                              "contents_id": 43,
+                              "contents_name": "버피",
+                              "contents_target": "유산소+전신",
+                              "contents_url": "https://youtu.be/zHMPpb8_H-E"
+                            },
+                            {
+                              "contents_id": 57,
+                              "contents_name": "숄더프레스 - 덤벨",
+                              "contents_target": "어깨+팔",
+                              "contents_url": "https://youtu.be/MdUol6_SZZw"
+                            },
+                            {
+                              "contents_id": 60,
+                              "contents_name": "스쿼트",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/63bRzSBNhaI"
+                            },
+                            {
+                              "contents_id": 91,
+                              "contents_name": "푸쉬업",
+                              "contents_target": "어깨+가슴+팔+복근",
+                              "contents_url": "https://youtu.be/hAGfBjvIRFI?list=PLPLaJMBWOkLqw5C0mQfb6rzZBcAyHm7Qv"
+                            }
+                          ]
                         },
                         {
                           "curri_id": 3,
                           "curri_name": "타바타 운동법",
                           "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_park.jpg",
                           "curri_type": "중급",
-                          "curri_info": " 10분 내 운동으로 최고의 효율을 내는 인터벌트레이닝 / 유산소운동 + 전신근력운동"
+                          "curri_info": " 10분 내 운동으로 최고의 효율을 내는 인터벌트레이닝 / 유산소운동 + 전신근력운동",
+                          "contents": [
+                            {
+                              "contents_id": 27,
+                              "contents_name": "런지 (우)",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+                            },
+                            {
+                              "contents_id": 28,
+                              "contents_name": "런지 (좌)",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+                            },
+                            {
+                              "contents_id": 30,
+                              "contents_name": "레그레이즈",
+                              "contents_target": "복부",
+                              "contents_url": "https://youtu.be/yxV2YHPCmVI"
+                            },
+                            {
+                              "contents_id": 33,
+                              "contents_name": "로우 - 덤벨",
+                              "contents_target": "등",
+                              "contents_url": "https://youtu.be/CiCSy2LKLjc"
+                            },
+                            {
+                              "contents_id": 38,
+                              "contents_name": "맨손 데드리프트",
+                              "contents_target": "허리+엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/SWcFijyoKBc"
+                            },
+                            {
+                              "contents_id": 43,
+                              "contents_name": "버피",
+                              "contents_target": "유산소+전신",
+                              "contents_url": "https://youtu.be/zHMPpb8_H-E"
+                            },
+                            {
+                              "contents_id": 57,
+                              "contents_name": "숄더프레스 - 덤벨",
+                              "contents_target": "어깨+팔",
+                              "contents_url": "https://youtu.be/MdUol6_SZZw"
+                            },
+                            {
+                              "contents_id": 60,
+                              "contents_name": "스쿼트",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/63bRzSBNhaI"
+                            },
+                            {
+                              "contents_id": 91,
+                              "contents_name": "푸쉬업",
+                              "contents_target": "어깨+가슴+팔+복근",
+                              "contents_url": "https://youtu.be/hAGfBjvIRFI?list=PLPLaJMBWOkLqw5C0mQfb6rzZBcAyHm7Qv"
+                            }
+                          ]
                         },
                         {
                           "curri_id": 4,
                           "curri_name": "타바타 운동법",
-                          "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_park.jpg",
+                          "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
                           "curri_type": "상급",
-                          "curri_info": " 10분 내 운동으로 최고의 효율을 내는 인터벌트레이닝 / 유산소운동 + 전신근력운동"
+                          "curri_info": " 10분 내 운동으로 최고의 효율을 내는 인터벌트레이닝 / 유산소운동 + 전신근력운동",
+                          "contents": [
+                            {
+                              "contents_id": 30,
+                              "contents_name": "레그레이즈",
+                              "contents_target": "복부",
+                              "contents_url": "https://youtu.be/yxV2YHPCmVI"
+                            },
+                            {
+                              "contents_id": 37,
+                              "contents_name": "마운틴클라이밍",
+                              "contents_target": "유산소+전신",
+                              "contents_url": "https://youtu.be/9av88dYFZMI"
+                            },
+                            {
+                              "contents_id": 43,
+                              "contents_name": "버피",
+                              "contents_target": "유산소+전신",
+                              "contents_url": "https://youtu.be/zHMPpb8_H-E"
+                            },
+                            {
+                              "contents_id": 60,
+                              "contents_name": "스쿼트",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/63bRzSBNhaI"
+                            }
+                          ]
                         },
                         {
                           "curri_id": 10,
                           "curri_name": "전신근력운동커리큘럼",
                           "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
                           "curri_type": "초급",
-                          "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동"
+                          "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동",
+                          "contents": [
+                            {
+                              "contents_id": 27,
+                              "contents_name": "런지 (우)",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+                            },
+                            {
+                              "contents_id": 28,
+                              "contents_name": "런지 (좌)",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+                            },
+                            {
+                              "contents_id": 30,
+                              "contents_name": "레그레이즈",
+                              "contents_target": "복부",
+                              "contents_url": "https://youtu.be/yxV2YHPCmVI"
+                            },
+                            {
+                              "contents_id": 33,
+                              "contents_name": "로우 - 덤벨",
+                              "contents_target": "등",
+                              "contents_url": "https://youtu.be/CiCSy2LKLjc"
+                            },
+                            {
+                              "contents_id": 38,
+                              "contents_name": "맨손 데드리프트",
+                              "contents_target": "허리+엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/SWcFijyoKBc"
+                            },
+                            {
+                              "contents_id": 43,
+                              "contents_name": "버피",
+                              "contents_target": "유산소+전신",
+                              "contents_url": "https://youtu.be/zHMPpb8_H-E"
+                            },
+                            {
+                              "contents_id": 57,
+                              "contents_name": "숄더프레스 - 덤벨",
+                              "contents_target": "어깨+팔",
+                              "contents_url": "https://youtu.be/MdUol6_SZZw"
+                            },
+                            {
+                              "contents_id": 60,
+                              "contents_name": "스쿼트",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/63bRzSBNhaI"
+                            },
+                            {
+                              "contents_id": 91,
+                              "contents_name": "푸쉬업",
+                              "contents_target": "어깨+가슴+팔+복근",
+                              "contents_url": "https://youtu.be/hAGfBjvIRFI?list=PLPLaJMBWOkLqw5C0mQfb6rzZBcAyHm7Qv"
+                            }
+                          ]
                         },
                         {
                           "curri_id": 11,
                           "curri_name": "전신근력운동커리큘럼",
-                          "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
+                          "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_snsd.jpg",
                           "curri_type": "중급",
-                          "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동"
+                          "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동",
+                          "contents": [
+                            {
+                              "contents_id": 27,
+                              "contents_name": "런지 (우)",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+                            },
+                            {
+                              "contents_id": 28,
+                              "contents_name": "런지 (좌)",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+                            },
+                            {
+                              "contents_id": 30,
+                              "contents_name": "레그레이즈",
+                              "contents_target": "복부",
+                              "contents_url": "https://youtu.be/yxV2YHPCmVI"
+                            },
+                            {
+                              "contents_id": 33,
+                              "contents_name": "로우 - 덤벨",
+                              "contents_target": "등",
+                              "contents_url": "https://youtu.be/CiCSy2LKLjc"
+                            },
+                            {
+                              "contents_id": 38,
+                              "contents_name": "맨손 데드리프트",
+                              "contents_target": "허리+엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/SWcFijyoKBc"
+                            },
+                            {
+                              "contents_id": 43,
+                              "contents_name": "버피",
+                              "contents_target": "유산소+전신",
+                              "contents_url": "https://youtu.be/zHMPpb8_H-E"
+                            },
+                            {
+                              "contents_id": 57,
+                              "contents_name": "숄더프레스 - 덤벨",
+                              "contents_target": "어깨+팔",
+                              "contents_url": "https://youtu.be/MdUol6_SZZw"
+                            },
+                            {
+                              "contents_id": 60,
+                              "contents_name": "스쿼트",
+                              "contents_target": "엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/63bRzSBNhaI"
+                            },
+                            {
+                              "contents_id": 91,
+                              "contents_name": "푸쉬업",
+                              "contents_target": "어깨+가슴+팔+복근",
+                              "contents_url": "https://youtu.be/hAGfBjvIRFI?list=PLPLaJMBWOkLqw5C0mQfb6rzZBcAyHm7Qv"
+                            }
+                          ]
                         },
                         {
                           "curri_id": 12,
                           "curri_name": "전신근력운동커리큘럼",
-                          "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
+                          "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_snsd.jpg",
                           "curri_type": "상급",
-                          "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동"
+                          "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동",
+                          "contents": [
+                            {
+                              "contents_id": 18,
+                              "contents_name": "덤벨 벤트 오버 로우",
+                              "contents_target": "유산소운동",
+                              "contents_url": "https://youtu.be/ZpmwIIzvpfI"
+                            },
+                            {
+                              "contents_id": 45,
+                              "contents_name": "버피테스트",
+                              "contents_target": "유산소+전신근력운동",
+                              "contents_url": "https://youtu.be/zHMPpb8_H-E"
+                            },
+                            {
+                              "contents_id": 53,
+                              "contents_name": "사이드플랭크 레그리프트",
+                              "contents_target": "전신",
+                              "contents_url": "https://youtu.be/6LumYq9U_nw"
+                            },
+                            {
+                              "contents_id": 69,
+                              "contents_name": "아놀드프레스",
+                              "contents_target": "어깨",
+                              "contents_url": "https://youtu.be/chxkoXJ4DpI"
+                            },
+                            {
+                              "contents_id": 77,
+                              "contents_name": "원레그프쉬업",
+                              "contents_target": "복부+엉덩이+허벅지+종아리",
+                              "contents_url": "https://youtu.be/xpzMr3nSOIE?list=PLqHv3iU2gbEtMDAeGTx_uMUm_OJuP45pD"
+                            },
+                            {
+                              "contents_id": 82,
+                              "contents_name": "점프스쿼트",
+                              "contents_target": "유산소+엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/QtPKuWNE56w"
+                            },
+                            {
+                              "contents_id": 83,
+                              "contents_name": "점핑런지",
+                              "contents_target": "유산소+엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/jcXDsFjHWTQ"
+                            },
+                            {
+                              "contents_id": 84,
+                              "contents_name": "점핑스위치레그",
+                              "contents_target": "유산소+어깨+복근+엉덩이+허벅지",
+                              "contents_url": "https://youtu.be/tYSY14SYwMU"
+                            }
+                          ]
                         }
                       ]
                     }
                   });
+
 
             }
 
@@ -411,77 +738,394 @@ router.get('/', function (req, res, next) {
     // 큐레이션 값이 존재 : 큐레이션 결과와 추천 커리큘럼 출력
     // 자신의 운동 타입이 변경 됨
     console.log('// 큐레이션 값이 존재 : 큐레이션 결과와 추천 커리큘럼 출력');
-        res.json({
-
-          "result": {
-            "message": "운동타입 및 추천커리큘럼 요청에 성공하였습니다",
-            "exctype": {
-              "exctype_id": 1,
-              "exctype_name": "아이돌",
-              "exctype_info": "아이돌타입 입니다.",
-              "exctype_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/exctype_girlfriend.jpg"
-            },
-            "curriculum": [
+    res.json({
+      "result": {
+        "message": "운동타입 및 추천커리큘럼 요청에 성공하였습니다",
+        "exctype": {
+          "exctype_id": 5,
+          "exctype_name": "운동선수",
+          "exctype_info": "운동선수타입 입니다.",
+          "exctype_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/exctype_girlfriend.jpg"
+        },
+        "curriculum": [
+          {
+            "curri_id": 1,
+            "curri_name": "기초체력기르기",
+            "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_lovelyz.jpg",
+            "curri_type": "초급",
+            "curri_info": "기초체력을 길러주는 전신운동 루틴입니다. / 유산소운동 + 전신근력운동",
+            "contents": [
               {
-                "curri_id": 1,
-                "curri_name": "기초체력기르기",
-                "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_snsd.jpg",
-                "curri_type": "초급",
-                "curri_info": "기초체력을 길러주는 전신운동 루틴입니다. / 유산소운동 + 전신근력운동"
+                "contents_id": 9,
+                "contents_name": "니 푸쉬업",
+                "contents_target": "어깨+가슴",
+                "contents_url": "https://youtu.be/SKCcvxBSQiA?list=PLWK0zibPydjUGl8xGBixK5oyZNH9ocKKF"
               },
               {
-                "curri_id": 2,
-                "curri_name": "기초체력기르기",
-                "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_snsd.jpg",
-                "curri_type": "중급",
-                "curri_info": "기초체력을 길러주는 전신운동 루틴입니다. / 유산소운동 + 전신근력운동"
+                "contents_id": 43,
+                "contents_name": "버피",
+                "contents_target": "유산소+전신",
+                "contents_url": "https://youtu.be/zHMPpb8_H-E"
               },
               {
-                "curri_id": 19,
-                "curri_name": "마일리사일러스 복근운동 커리큘럼",
-                "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
-                "curri_type": "초급",
-                "curri_info": "짧은시간안에 강력한 효과를주는 마일리사일러스의 복근운동 루틴 /  복근 /"
+                "contents_id": 60,
+                "contents_name": "스쿼트",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/63bRzSBNhaI"
               },
               {
-                "curri_id": 20,
-                "curri_name": "마일리사일러스 복근운동 커리큘럼",
-                "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
-                "curri_type": "중급",
-                "curri_info": "짧은시간안에 강력한 효과를주는 마일리사일러스의 복근운동 루틴 /  복근 /"
+                "contents_id": 95,
+                "contents_name": "플랭크",
+                "contents_target": "어깨+복부+허벅지",
+                "contents_url": "https://youtu.be/X0OZKVzVVMw"
+              }
+            ]
+          },
+          {
+            "curri_id": 2,
+            "curri_name": "기초체력기르기",
+            "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_moon.jpg",
+            "curri_type": "중급",
+            "curri_info": "기초체력을 길러주는 전신운동 루틴입니다. / 유산소운동 + 전신근력운동",
+            "contents": [
+              {
+                "contents_id": 27,
+                "contents_name": "런지 (우)",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/9lVB9e1GTTQ"
               },
               {
-                "curri_id": 21,
-                "curri_name": "마일리사일러스 복근운동 커리큘럼",
-                "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
-                "curri_type": "상급",
-                "curri_info": "짧은시간안에 강력한 효과를주는 마일리사일러스의 복근운동 루틴 /  복근 /"
+                "contents_id": 28,
+                "contents_name": "런지 (좌)",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/9lVB9e1GTTQ"
               },
               {
-                "curri_id": 22,
-                "curri_name": "11자복근프로젝트커리큘럼",
-                "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_park.jpg",
-                "curri_type": "초급",
-                "curri_info": "아름다운 허리라인과 복근을 만들어주는 운동루틴 / 유산소운동+복부운동"
+                "contents_id": 30,
+                "contents_name": "레그레이즈",
+                "contents_target": "복부",
+                "contents_url": "https://youtu.be/yxV2YHPCmVI"
               },
               {
-                "curri_id": 23,
-                "curri_name": "11자복근프로젝트커리큘럼",
-                "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_park.jpg",
-                "curri_type": "중급",
-                "curri_info": "아름다운 허리라인과 복근을 만들어주는 운동루틴 / 유산소운동+복부운동"
+                "contents_id": 33,
+                "contents_name": "로우 - 덤벨",
+                "contents_target": "등",
+                "contents_url": "https://youtu.be/CiCSy2LKLjc"
               },
               {
-                "curri_id": 24,
-                "curri_name": "11자복근프로젝트커리큘럼",
-                "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_park.jpg",
-                "curri_type": "상급",
-                "curri_info": "아름다운 허리라인과 복근을 만들어주는 운동루틴 / 유산소운동+복부운동"
+                "contents_id": 38,
+                "contents_name": "맨손 데드리프트",
+                "contents_target": "허리+엉덩이+허벅지",
+                "contents_url": "https://youtu.be/SWcFijyoKBc"
+              },
+              {
+                "contents_id": 43,
+                "contents_name": "버피",
+                "contents_target": "유산소+전신",
+                "contents_url": "https://youtu.be/zHMPpb8_H-E"
+              },
+              {
+                "contents_id": 57,
+                "contents_name": "숄더프레스 - 덤벨",
+                "contents_target": "어깨+팔",
+                "contents_url": "https://youtu.be/MdUol6_SZZw"
+              },
+              {
+                "contents_id": 60,
+                "contents_name": "스쿼트",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/63bRzSBNhaI"
+              },
+              {
+                "contents_id": 91,
+                "contents_name": "푸쉬업",
+                "contents_target": "어깨+가슴+팔+복근",
+                "contents_url": "https://youtu.be/hAGfBjvIRFI?list=PLPLaJMBWOkLqw5C0mQfb6rzZBcAyHm7Qv"
+              }
+            ]
+          },
+          {
+            "curri_id": 3,
+            "curri_name": "타바타 운동법",
+            "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_park.jpg",
+            "curri_type": "중급",
+            "curri_info": " 10분 내 운동으로 최고의 효율을 내는 인터벌트레이닝 / 유산소운동 + 전신근력운동",
+            "contents": [
+              {
+                "contents_id": 27,
+                "contents_name": "런지 (우)",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+              },
+              {
+                "contents_id": 28,
+                "contents_name": "런지 (좌)",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+              },
+              {
+                "contents_id": 30,
+                "contents_name": "레그레이즈",
+                "contents_target": "복부",
+                "contents_url": "https://youtu.be/yxV2YHPCmVI"
+              },
+              {
+                "contents_id": 33,
+                "contents_name": "로우 - 덤벨",
+                "contents_target": "등",
+                "contents_url": "https://youtu.be/CiCSy2LKLjc"
+              },
+              {
+                "contents_id": 38,
+                "contents_name": "맨손 데드리프트",
+                "contents_target": "허리+엉덩이+허벅지",
+                "contents_url": "https://youtu.be/SWcFijyoKBc"
+              },
+              {
+                "contents_id": 43,
+                "contents_name": "버피",
+                "contents_target": "유산소+전신",
+                "contents_url": "https://youtu.be/zHMPpb8_H-E"
+              },
+              {
+                "contents_id": 57,
+                "contents_name": "숄더프레스 - 덤벨",
+                "contents_target": "어깨+팔",
+                "contents_url": "https://youtu.be/MdUol6_SZZw"
+              },
+              {
+                "contents_id": 60,
+                "contents_name": "스쿼트",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/63bRzSBNhaI"
+              },
+              {
+                "contents_id": 91,
+                "contents_name": "푸쉬업",
+                "contents_target": "어깨+가슴+팔+복근",
+                "contents_url": "https://youtu.be/hAGfBjvIRFI?list=PLPLaJMBWOkLqw5C0mQfb6rzZBcAyHm7Qv"
+              }
+            ]
+          },
+          {
+            "curri_id": 4,
+            "curri_name": "타바타 운동법",
+            "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
+            "curri_type": "상급",
+            "curri_info": " 10분 내 운동으로 최고의 효율을 내는 인터벌트레이닝 / 유산소운동 + 전신근력운동",
+            "contents": [
+              {
+                "contents_id": 30,
+                "contents_name": "레그레이즈",
+                "contents_target": "복부",
+                "contents_url": "https://youtu.be/yxV2YHPCmVI"
+              },
+              {
+                "contents_id": 37,
+                "contents_name": "마운틴클라이밍",
+                "contents_target": "유산소+전신",
+                "contents_url": "https://youtu.be/9av88dYFZMI"
+              },
+              {
+                "contents_id": 43,
+                "contents_name": "버피",
+                "contents_target": "유산소+전신",
+                "contents_url": "https://youtu.be/zHMPpb8_H-E"
+              },
+              {
+                "contents_id": 60,
+                "contents_name": "스쿼트",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/63bRzSBNhaI"
+              }
+            ]
+          },
+          {
+            "curri_id": 10,
+            "curri_name": "전신근력운동커리큘럼",
+            "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_ronaldo.jpg",
+            "curri_type": "초급",
+            "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동",
+            "contents": [
+              {
+                "contents_id": 27,
+                "contents_name": "런지 (우)",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+              },
+              {
+                "contents_id": 28,
+                "contents_name": "런지 (좌)",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+              },
+              {
+                "contents_id": 30,
+                "contents_name": "레그레이즈",
+                "contents_target": "복부",
+                "contents_url": "https://youtu.be/yxV2YHPCmVI"
+              },
+              {
+                "contents_id": 33,
+                "contents_name": "로우 - 덤벨",
+                "contents_target": "등",
+                "contents_url": "https://youtu.be/CiCSy2LKLjc"
+              },
+              {
+                "contents_id": 38,
+                "contents_name": "맨손 데드리프트",
+                "contents_target": "허리+엉덩이+허벅지",
+                "contents_url": "https://youtu.be/SWcFijyoKBc"
+              },
+              {
+                "contents_id": 43,
+                "contents_name": "버피",
+                "contents_target": "유산소+전신",
+                "contents_url": "https://youtu.be/zHMPpb8_H-E"
+              },
+              {
+                "contents_id": 57,
+                "contents_name": "숄더프레스 - 덤벨",
+                "contents_target": "어깨+팔",
+                "contents_url": "https://youtu.be/MdUol6_SZZw"
+              },
+              {
+                "contents_id": 60,
+                "contents_name": "스쿼트",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/63bRzSBNhaI"
+              },
+              {
+                "contents_id": 91,
+                "contents_name": "푸쉬업",
+                "contents_target": "어깨+가슴+팔+복근",
+                "contents_url": "https://youtu.be/hAGfBjvIRFI?list=PLPLaJMBWOkLqw5C0mQfb6rzZBcAyHm7Qv"
+              }
+            ]
+          },
+          {
+            "curri_id": 11,
+            "curri_name": "전신근력운동커리큘럼",
+            "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_snsd.jpg",
+            "curri_type": "중급",
+            "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동",
+            "contents": [
+              {
+                "contents_id": 27,
+                "contents_name": "런지 (우)",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+              },
+              {
+                "contents_id": 28,
+                "contents_name": "런지 (좌)",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/9lVB9e1GTTQ"
+              },
+              {
+                "contents_id": 30,
+                "contents_name": "레그레이즈",
+                "contents_target": "복부",
+                "contents_url": "https://youtu.be/yxV2YHPCmVI"
+              },
+              {
+                "contents_id": 33,
+                "contents_name": "로우 - 덤벨",
+                "contents_target": "등",
+                "contents_url": "https://youtu.be/CiCSy2LKLjc"
+              },
+              {
+                "contents_id": 38,
+                "contents_name": "맨손 데드리프트",
+                "contents_target": "허리+엉덩이+허벅지",
+                "contents_url": "https://youtu.be/SWcFijyoKBc"
+              },
+              {
+                "contents_id": 43,
+                "contents_name": "버피",
+                "contents_target": "유산소+전신",
+                "contents_url": "https://youtu.be/zHMPpb8_H-E"
+              },
+              {
+                "contents_id": 57,
+                "contents_name": "숄더프레스 - 덤벨",
+                "contents_target": "어깨+팔",
+                "contents_url": "https://youtu.be/MdUol6_SZZw"
+              },
+              {
+                "contents_id": 60,
+                "contents_name": "스쿼트",
+                "contents_target": "엉덩이+허벅지",
+                "contents_url": "https://youtu.be/63bRzSBNhaI"
+              },
+              {
+                "contents_id": 91,
+                "contents_name": "푸쉬업",
+                "contents_target": "어깨+가슴+팔+복근",
+                "contents_url": "https://youtu.be/hAGfBjvIRFI?list=PLPLaJMBWOkLqw5C0mQfb6rzZBcAyHm7Qv"
+              }
+            ]
+          },
+          {
+            "curri_id": 12,
+            "curri_name": "전신근력운동커리큘럼",
+            "curri_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/curri_snsd.jpg",
+            "curri_type": "상급",
+            "curri_info": "마르고 밋밋한 몸매를 멋지고 사랑스럽게 만들어주는 전신운동루틴  / 유산소운동 + 전신근력운동",
+            "contents": [
+              {
+                "contents_id": 18,
+                "contents_name": "덤벨 벤트 오버 로우",
+                "contents_target": "유산소운동",
+                "contents_url": "https://youtu.be/ZpmwIIzvpfI"
+              },
+              {
+                "contents_id": 45,
+                "contents_name": "버피테스트",
+                "contents_target": "유산소+전신근력운동",
+                "contents_url": "https://youtu.be/zHMPpb8_H-E"
+              },
+              {
+                "contents_id": 53,
+                "contents_name": "사이드플랭크 레그리프트",
+                "contents_target": "전신",
+                "contents_url": "https://youtu.be/6LumYq9U_nw"
+              },
+              {
+                "contents_id": 69,
+                "contents_name": "아놀드프레스",
+                "contents_target": "어깨",
+                "contents_url": "https://youtu.be/chxkoXJ4DpI"
+              },
+              {
+                "contents_id": 77,
+                "contents_name": "원레그프쉬업",
+                "contents_target": "복부+엉덩이+허벅지+종아리",
+                "contents_url": "https://youtu.be/xpzMr3nSOIE?list=PLqHv3iU2gbEtMDAeGTx_uMUm_OJuP45pD"
+              },
+              {
+                "contents_id": 82,
+                "contents_name": "점프스쿼트",
+                "contents_target": "유산소+엉덩이+허벅지",
+                "contents_url": "https://youtu.be/QtPKuWNE56w"
+              },
+              {
+                "contents_id": 83,
+                "contents_name": "점핑런지",
+                "contents_target": "유산소+엉덩이+허벅지",
+                "contents_url": "https://youtu.be/jcXDsFjHWTQ"
+              },
+              {
+                "contents_id": 84,
+                "contents_name": "점핑스위치레그",
+                "contents_target": "유산소+어깨+복근+엉덩이+허벅지",
+                "contents_url": "https://youtu.be/tYSY14SYwMU"
               }
             ]
           }
-
-        });
+        ]
+      }
+    });
 
   }
 });
