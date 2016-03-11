@@ -71,17 +71,18 @@ router.get('/me', function (req, res, next) {
         res.json({
             "result" : {
             "message": "마이페이지가 정상적으로 조회되었습니다...",
-              "user": {
-                "user_name" : "kimstar",
-                  "user_photourl" :  "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_um.jpg",
-                  "hours": 1510,
-                  "exctype_name": "머슬퀸"
-            },
-            "project_history": [
-                {
-                    "project_id": 25,
-                    "project_name": "기초체력기르기",
-                    "project_on": true
+                "user": {
+                    "user_name": "kimstar",
+                    "user_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_um.jpg",
+                    "hours": 1510,
+                    "badgeCnt": 1,
+                    "exctype_name": "머슬퀸"
+                },
+                "project_history": [
+                    {
+                        "project_id": 25,
+                        "project_name": "기초체력기르기",
+                        "project_on": true
                 },
                 {
                     "project_id": 26,

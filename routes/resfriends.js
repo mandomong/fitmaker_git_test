@@ -12,13 +12,13 @@ router.get('/', function (req, res, next) {
           "friend_id": 10,
           "friend_name": "한솔",
           "friend_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_han.jpg",
-          "state": 0
+          "friend_state": 0
         },
         {
           "friend_id": 19,
           "friend_name": "혜선",
           "friend_photourl": "https://s3.ap-northeast-2.amazonaws.com/fitmakerbucket/test/users_me_sun.jpg",
-          "state": 0
+          "friend_state": 0
         }
       ]
     }
