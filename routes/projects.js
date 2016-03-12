@@ -45,8 +45,8 @@ router.get('/:project_id', function (req, res, next) {
                 }
             ],
             "today": {
-                "position": null,
-                "check": false
+                "position": 2,
+                "check": true
             },
             "courses": [
                 {
